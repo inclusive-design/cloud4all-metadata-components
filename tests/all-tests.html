@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Metadata and feedback complete tests runner</title>
+
+    <link rel="stylesheet" href="lib/infusion/lib/qunit/css/qunit.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="lib/infusion/lib/qunit/addons/composite/qunit-composite.css">
+    <script src="lib/infusion/lib/qunit/js/qunit.js"></script>
+    <script src="lib/infusion/lib/qunit/addons/composite/qunit-composite.js"></script>
+
+    <script>
+    QUnit.testSuites("Metadata Authoring Tests", [
+        "./components/metadata/all-tests.html"
+    ]);
+    QUnit.testSuites("Feedback Tool Tests", [
+        "./components/feedback/all-tests.html"
+    ]);
+    QUnit.testSuites("Pouch DB Data Source Tests", [
+        "./components/pouchDBDataSource/all-tests.html"
+    ]);
+    </script>
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">
+</div>
+</body>
+</html>
